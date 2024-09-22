@@ -1,0 +1,374 @@
+.circle-container {
+    position: relative;
+    width: 381px; /* Adjust size as needed */
+    height: 381px; /* Adjust size as needed */
+    margin: 0 auto; /* Center the circles */
+    top: -45px; /* Shift up */
+    left: 211px; /* Shift right */
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 48%;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #7C7C7C; /* Default outline color */
+    box-sizing: border-box; /* Include border in total size */
+    background-color: transparent; /* Transparent fill */
+    border-color: #333;
+    border-width: 0.04rem;
+}
+
+.circle-1 {
+    width: 100%;
+    height: 100%;
+    top: 1%;
+    left: 1%;
+    background-color: transparent; /* Ensure fill is transparent */
+    border-color: #333;
+    border-width: 0.04rem;
+}
+
+.circle-2 {
+    width: 90.5%;
+    height: 90.5%;
+    top: 2.7%;
+    left: 9.2%;
+    border-color: #333;
+    border-width: 0.04rem;
+}
+
+.circle-3 {
+    width: 77.1%;
+    height: 77.1%;
+    top: 4.8%;
+    left: 20.7%;
+    border-color: #333;
+    border-width: 0.04rem;
+}
+
+.circle-4 {
+    width: 62.7%;
+    height: 62.7%;
+    top: 7.5%;
+    left: 33.5%;
+    border-color: #333;
+    border-width: 0.04rem;
+}
+
+.circle-5 {
+    width: 49.5%;
+    height: 49.5%;
+    top: 9.5%;
+    left: 44.8%;
+    border-color: #333;
+    border-width: 0.04rem;
+}
+
+.circle-6 {
+    width: 37%; /* Adjust size if needed */
+    height: 37%; /* Adjust size if needed */
+    top: 12%;
+    left: 56.2%;
+    border-color: #333; /* Inner circle color */
+    border-width: 0.04rem;
+}
+
+/* Text styling */
+
+.text-on-circle-1 {
+    position: absolute;
+    top: 48.5%; 
+    left: 41.9%; 
+    transform: translate(-50%, -50%); /* Center text inside container */
+    font-size: 0.52rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: left; 
+    z-index: 1; 
+    white-space: normal; 
+    width: 300px; 
+}
+
+.text-on-circle-2 {
+    position: absolute;
+    top: 75%; 
+    left: 58.7%; 
+    transform: translate(-50%, -50%); /* Center text inside container */
+    font-size: 0.52rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: left; 
+    z-index: 1; 
+    white-space: normal; 
+    width: 300px; 
+}
+
+.text-on-circle-3 {
+    position: absolute;
+    top: 36%; 
+    left: 63.6%; 
+    transform: translate(-50%, -50%); /* Center text inside container */
+    font-size: 0.52rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: left; 
+    z-index: 1; 
+    white-space: normal; 
+    width: 300px; 
+}
+
+.text-on-circle-4 {
+    position: absolute;
+    top: 63.3%; 
+    left: 85.1%; 
+    transform: translate(-50%, -50%); /* Center text inside container */
+    font-size: 0.52rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: left; 
+    z-index: 1; 
+    white-space: normal; 
+    width: 300px; 
+}
+
+.text-on-circle-5 {
+    position: absolute;
+    top: 22.7%; 
+    left: 90.6%; 
+    transform: translate(-50%, -50%); /* Center text inside container */
+    font-size: 0.52rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: left; 
+    z-index: 1; 
+    white-space: normal; 
+    width: 300px; 
+}
+
+.text-on-circle-6 {
+    position: absolute;
+    top: 44.7%; 
+    left: 101.4%; 
+    transform: translate(-50%, -50%); /* Center text inside container */
+    font-size: 0.52rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: left; 
+    z-index: 1; 
+    white-space: normal; 
+    width: 300px; 
+}
+
+.text-on-circle-7 {
+    position: absolute;
+    top: 18.1%; 
+    left: 130.4%; 
+    transform: translate(-50%, -50%); /* Center text inside container */
+    font-size: 0.52rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: left; 
+    z-index: 1; 
+    white-space: normal; 
+    width: 300px; 
+}
+
+
+
+.highlight {
+    color: #a60000; /* Color for "E-commerce Website" */
+}
+
+
+.outer-circle {
+    position: absolute;
+    width: 8px; /* Adjust size as needed */
+    height: 8px; /* Adjust size as needed */
+    top: 18.2%; /* Position it as needed */
+    left: 88.7%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    border: 0.05rem solid #000000; /* Outline color */
+    background-color: transparent; /* Transparent fill */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.red-dot {
+    position: absolute;
+    width: 5px; /* Adjust size as needed */
+    height: 5px; /* Adjust size as needed */
+    top: 17.6%; /* Position it as needed */
+    left: 88%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #a60000; /* Fill color */
+    z-index: 3; /* Ensure it appears above the outer circle */
+    animation: pulsate 1.5s infinite;
+}
+
+.outer-circle2 {
+    position: absolute;
+    width: 8px; /* Adjust size as needed */
+    height: 8px; /* Adjust size as needed */
+    top: 21.2%; /* Position it as needed */
+    left: 48.7%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    border: 0.05rem solid #000000; /* Outline color */
+    background-color: transparent; /* Transparent fill */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.red-dot2 {
+    position: absolute;
+    width: 5px; /* Adjust size as needed */
+    height: 5px; /* Adjust size as needed */
+    top: 21.2%; /* Position it as needed */
+    left: 48.7%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #a60000; /* Fill color */
+    z-index: 3; /* Ensure it appears above the outer circle */
+}
+
+
+.outer-circle3 {
+    position: absolute;
+    width: 8px; /* Adjust size as needed */
+    height: 8px; /* Adjust size as needed */
+    top: 41.2%; /* Position it as needed */
+    left: 59.8%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    border: 0.05rem solid #000000; /* Outline color */
+    background-color: transparent; /* Transparent fill */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.red-dot3 {
+    position: absolute;
+    width: 5px; /* Adjust size as needed */
+    height: 5px; /* Adjust size as needed */
+    top: 41.2%; /* Position it as needed */
+    left: 59.8%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #a60000; /* Fill color */
+    z-index: 3; /* Ensure it appears above the outer circle */
+}
+
+.outer-circle4 {
+    position: absolute;
+    width: 8px; /* Adjust size as needed */
+    height: 8px; /* Adjust size as needed */
+    top: 61.8%; /* Position it as needed */
+    left: 43.8%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    border: 0.05rem solid #000000; /* Outline color */
+    background-color: transparent; /* Transparent fill */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.red-dot4 {
+    position: absolute;
+    width: 5px; /* Adjust size as needed */
+    height: 5px; /* Adjust size as needed */
+    top: 61.8%; /* Position it as needed */
+    left: 43.8%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #a60000; /* Fill color */
+    z-index: 3; /* Ensure it appears above the outer circle */
+}
+
+.outer-circle5 {
+    position: absolute;
+    width: 8px; /* Adjust size as needed */
+    height: 8px; /* Adjust size as needed */
+    top: 34.4%; /* Position it as needed */
+    left: 21.8%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    border: 0.05rem solid #000000; /* Outline color */
+    background-color: transparent; /* Transparent fill */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.red-dot5 {
+    position: absolute;
+    width: 5px; /* Adjust size as needed */
+    height: 5px; /* Adjust size as needed */
+    top: 34.4%; /* Position it as needed */
+    left: 21.8%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #a60000; /* Fill color */
+    z-index: 3; /* Ensure it appears above the outer circle */
+}
+
+.outer-circle6 {
+    position: absolute;
+    width: 8px; /* Adjust size as needed */
+    height: 8px; /* Adjust size as needed */
+    top: 73.3%; /* Position it as needed */
+    left: 17.1%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    border: 0.05rem solid #000000; /* Outline color */
+    background-color: transparent; /* Transparent fill */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.red-dot6 {
+    position: absolute;
+    width: 5px; /* Adjust size as needed */
+    height: 5px; /* Adjust size as needed */
+    top: 73.3%; /* Position it as needed */
+    left: 17.1%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #a60000; /* Fill color */
+    z-index: 3; /* Ensure it appears above the outer circle */
+}
+
+.outer-circle7 {
+    position: absolute;
+    width: 8px; /* Adjust size as needed */
+    height: 8px; /* Adjust size as needed */
+    top: 46.7%; /* Position it as needed */
+    left: 1.1%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    border: 0.05rem solid #000000; /* Outline color */
+    background-color: transparent; /* Transparent fill */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.red-dot7 {
+    position: absolute;
+    width: 5px; /* Adjust size as needed */
+    height: 5px; /* Adjust size as needed */
+    top: 46.7%; /* Position it as needed */
+    left: 1.1%; /* Position it as needed */
+    transform: translate(-50%, -50%); /* Center it */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #a60000; /* Fill color */
+    z-index: 3; /* Ensure it appears above the outer circle */
+}
+
+/* Add your existing keyframes */
+@keyframes CSSscrollReveal {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+        size: 0rem;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        size: 1.30rem;
+    }
+}
