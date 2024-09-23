@@ -397,3 +397,57 @@ img {
         size: 1.30rem;
     }
 }
+
+
+
+
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.stat {
+    flex: 0 1 38%; /* Adjust width !!!!!!! */
+    padding: 20px; /* */
+    max-width: 250px; /* Set max width for the stat */
+}
+
+
+.number {
+    font-size: 3rem;
+    color: #333;
+}
+
+.subtext {
+    font-size: 0.67rem;
+    color: #555;
+    font-weight: 400;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
