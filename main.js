@@ -2,7 +2,7 @@
 
 // Mouse Scroll Speed Adjuster
 
-let scrollSpeed = 0.3; // Adjust this value to control scroll sensitivity (lower value = slower scroll)
+let scrollSpeed = 0.34; // Adjust this value to control scroll sensitivity (lower value = slower scroll)
 let currentScroll = window.scrollY;
 let isScrolling = false;
 
@@ -72,6 +72,158 @@ function updateDotPosition() {
 
 // Start the animation loop
 requestAnimationFrame(updateDotPosition);
+
+
+
+
+
+
+
+
+// Counter Statistics Animation
+
+// Select all elements with the class 'number'
+const counters = document.querySelectorAll('.number');
+
+// Define the function that animates the counter
+const startCounterAnimation = (direction) => {
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const currentText = counter.innerText.replace(/[^\d]/g, '');
+        let count = +currentText || 0; // Initialize count
+
+        // Adjust increments for percentage and non-percentage counters
+        const isPercentage = counter.innerText.includes('%');
+        const increment = isPercentage ? target / 60 : target / 60000; // Slower for non-percentage
+
+        const updateCounter = () => {
+            if (direction === 'up' && count < target) {
+                count = Math.ceil(count + increment);
+                if (count > target) count = target; // Ensure it doesn't exceed target
+                counter.innerText = count + (isPercentage ? '%' : '+');
+                setTimeout(updateCounter, 20); // Control update frequency with delay
+            } else if (direction === 'down' && count > 0) {
+                count = Math.floor(count - increment);
+                if (count < 0) count = 0; // Prevent going below 0
+                counter.innerText = count + (isPercentage ? '%' : '+');
+                setTimeout(updateCounter, 20); // Control update frequency with delay
+            }
+        };
+
+        updateCounter(); // Start the animation
+    });
+};
+
+// Flags to track animations
+let hasAnimatedUp = false;
+let hasAnimatedDown = false;
+
+// Intersection Observer to detect when .stats-container enters and exits the viewport
+const statsContainer = document.querySelector('.stats-container');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !hasAnimatedUp) {
+            startCounterAnimation('up'); // Animate up on enter
+            hasAnimatedUp = true;
+            hasAnimatedDown = false; // Allow for reverse animation later
+        } else if (!entry.isIntersecting && !hasAnimatedDown) {
+            startCounterAnimation('down'); // Animate down on exit
+            hasAnimatedDown = true;
+            hasAnimatedUp = false; // Reset for future entry
+        }
+    });
+}, { threshold: 0.6 }); // Adjust threshold based on when you want the animation to trigger
+
+// Start observing the .stats-container element
+observer.observe(statsContainer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
